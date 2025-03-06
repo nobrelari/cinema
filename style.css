@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/heavy-grain.png');
+}
+
+.background {
+    position: relative;
+    background-color: rgba(255, 182, 193, 0.5); /* Tom suave de rosa */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.card h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff6b81;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #7f4f6d;
+    font-weight: 400;
+}
+
+.card:before {
+    content: '❤️';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #ff6b81;
+}
+
+.card:after {
+    content: '❤️';
+    position: absolute;
+    bottom: -25px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 50px;
+    color: #ff6b81;
+}
+
+.background::before {
+    content: '';
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/42/heart-2692513_960_720.png');
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
